@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCMC: Community Healthcare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">HCMC</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <!-- <a href="#contact">Contact</a> -->
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+               <div class="cont">
+                <h4>Financial Cooperatives is about building permanent local financial institutions
+                    that can attract domestic deposits, recycle them into loans, and provide other financial services
+                </h4>
+                <div class="search-bar">
+                    <input type="text" placeholder="Enter your location">
+                    <button>Search</button>
+                </div>
+               </div>
+               <div class="hero-image">
+                <img src="images/undraw_teamwork_hpdk (1).png" alt="">
+            </div>
+            </div>
+            
+        </section>
+
+        <section class="affiliations">
+            <div class="container">
+                <h2>Cooperative Services</h2>
+                <div class="affiliate-logos">
+                    <div class="affiliate-logo">Leasing</div>
+                    <div class="affiliate-logo">Insurance</div>
+                    <div class="affiliate-logo">Logistics</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2>Key Benefits</h2>
+                <div class="benefit-items">
+                    <div class="benefit-item">
+                        <img src="images/SocialBu Blog Image - Wed Dec 11 2024 07_30_41 GMT-0800 (Pacific Standard Time).png" alt="Community Support">
+                        <h3>Eligibity <span>Application form N1000</span></h3>
+                        <p>
+                           Share purchase of N2000 minimum <br>
+                           Compulsory savings min of N2000 either weekly or foortnightly or monthly
+                        </p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="images/SocialBu Blog Image - Wed Dec 11 2024 07_31_44 GMT-0800 (Pacific Standard Time).png" alt="Convenient Delivery">
+                        <h3>Hall Connects Healthcare Services</h3>
+                        <p>
+                        
+                            <!-- No payments for hospital beds if admitted for 2 weeks <br> -->
+                            Access to more than 800 hospitals all over Nigeria
+                        </p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="images/SocialBu Blog Image - Wed Dec 11 2024 07_33_36 GMT-0800 (Pacific Standard Time).png" alt="Cooperative Care">
+                        <h3>HCMC Eco-system of Trading</h3>
+                        <p>
+                            We specialize in cross-selling of Home use Electronics and educational supports products, Generator and other range of consolidated professional tools
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Members Say</h2>
+                <div class="testimonial-items">
+                    <div class="testimonial-item">
+                        <p>"Being part of this healthcare cooperative has made a real difference in our community. The support and accessibility are outstanding!"</p>
+                        <p><strong>- Community Member</strong></p>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"The cooperative approach to healthcare delivery is revolutionary. It's making healthcare more accessible for everyone."</p>
+                        <p><strong>- Local Resident</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HCMC</h3>
+                    <p>Making healthcare accessible through community cooperation</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#about">About Us</a>
+                        <a href="#services">Services</a>
+                        <a href="#locations">Locations</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <div class="footer-links">
+                        <a href="#">Prescription Delivery</a>
+                        <a href="#">Health Consultations</a>
+                        <a href="#">Community Support</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 HCMC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInside = hamburger.contains(event.target) || navLinks.contains(event.target);
+                if (!isClickInside && navLinks.classList.contains('active')) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 768) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

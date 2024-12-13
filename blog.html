@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCMC Blog: Community Healthcare Insights</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">HCMC</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <!-- <a href="#services">Services</a> -->
+                <!-- <a href="#contact">Contact</a> -->
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>HCMC Blog</h1>
+                <p>Insights and updates from our community healthcare network</p>
+            </div>
+        </section>
+
+        <section class="blog-content container">
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <img src="images/SocialBu Blog Image - Wed Dec 11 2024 07_30_41 GMT-0800 (Pacific Standard Time).png" alt="Community Health Initiative">
+                    <div class="blog-post-content">
+                        <h2>New Community Health Initiative Launched</h2>
+                        <p>We're excited to announce our latest initiative aimed at improving health outcomes in underserved communities...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <img src="images/SocialBu Blog Image - Wed Dec 11 2024 07_31_44 GMT-0800 (Pacific Standard Time).png" alt="Telemedicine Advancements">
+                    <div class="blog-post-content">
+                        <h2>Telemedicine: The Future of Healthcare Delivery</h2>
+                        <p>Discover how HCMC is leveraging telemedicine to bring quality healthcare to remote areas...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <img src="images/SocialBu Blog Image - Wed Dec 11 2024 07_33_36 GMT-0800 (Pacific Standard Time).png" alt="Volunteer Spotlight">
+                    <div class="blog-post-content">
+                        <h2>Volunteer Spotlight: Meet Dr. Sarah Johnson</h2>
+                        <p>Learn about the incredible impact Dr. Johnson is making in her community through our volunteer program...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <img src="images/SocialBu Blog Image - Wed Dec 11 2024 07_30_41 GMT-0800 (Pacific Standard Time).png" alt="Health Tips">
+                    <div class="blog-post-content">
+                        <h2>5 Simple Health Tips for a Busy Lifestyle</h2>
+                        <p>Our health experts share easy-to-implement tips to maintain your health even with a hectic schedule...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HCMC</h3>
+                    <p>Making healthcare accessible through community cooperation</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="#services">Services</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <div class="footer-links">
+                        <a href="#">Prescription Delivery</a>
+                        <a href="#">Health Consultations</a>
+                        <a href="#">Community Support</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 HCMC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInside = hamburger.contains(event.target) || navLinks.contains(event.target);
+                if (!isClickInside && navLinks.classList.contains('active')) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 768) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
