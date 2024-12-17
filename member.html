@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Members</title>
+    <link rel="stylesheet" href="member.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Organization Members</h1>
+        <div class="content">
+            <div class="members">
+                <h2>Members</h2>
+                <div class="member">
+                    <img src="images/undraw_teamwork_hpdk (1).png" alt="John Doe">
+                    <div class="member-info">
+                        <h3>John Doe</h3>
+                        <p>Developer</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="images/undraw_teamwork_hpdk (1).png" alt="Jane Smith">
+                    <div class="member-info">
+                        <h3>Jane Smith</h3>
+                        <p>Designer</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="images/undraw_teamwork_hpdk (1).png" alt="Bob Johnson">
+                    <div class="member-info">
+                        <h3>Bob Johnson</h3>
+                        <p>Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-forms">
+                <div class="tabs">
+                    <div class="tab active" data-tab="login">Login</div>
+                    <div class="tab" data-tab="signup">Sign Up</div>
+                    <div class="tab" data-tab="forgot">Forgot Password</div>
+                </div>
+                <form id="loginForm" class="form active">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" required>
+                        <div class="error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" required>
+                        <div class="error"></div>
+                    </div>
+                    <button type="submit">Login</button>
+                    <div class="forgot-password">
+                        <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+                    </div>
+                </form>
+                <form id="signupForm" class="form">
+                    <div class="form-group">
+                        <label for="signupName">Name</label>
+                        <input type="text" id="signupName" required>
+                        <div class="error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" required>
+                        <div class="error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" required>
+                        <div class="error"></div>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <form id="forgotPasswordForm" class="form">
+                    <div class="form-group">
+                        <label for="forgotEmail">Email</label>
+                        <input type="email" id="forgotEmail" required>
+                        <div class="error"></div>
+                    </div>
+                    <button type="submit">Reset Password</button>
+                </form>
+            </div>
+        </div>
+        <button style="margin-top: 70px;" onclick="window.location.href='index.html';">Back to Home</button>
+    </div>
+
+
+    <script src="member.js"></script>
+</body>
+</html>

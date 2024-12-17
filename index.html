@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HCMC: Community Healthcare</title>
+    <title>HCMC: MultiPurpose Cooperative Society</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,6 +15,8 @@
                 <a href="about.html">About</a>
                 <a href="blog.html">Blog</a>
                 <!-- <a href="#contact">Contact</a> -->
+                <a href="service.html">Services</a>
+                <a href="member.html">Members</a>
             </div>
             <div class="hamburger">
                 <div></div>
@@ -86,21 +88,60 @@
             </div>
         </section>
 
-        <section class="testimonials">
-            <div class="container">
-                <h2>What Our Members Say</h2>
-                <div class="testimonial-items">
-                    <div class="testimonial-item">
-                        <p>"Being part of this healthcare cooperative has made a real difference in our community. The support and accessibility are outstanding!"</p>
-                        <p><strong>- Community Member</strong></p>
-                    </div>
-                    <div class="testimonial-item">
-                        <p>"The cooperative approach to healthcare delivery is revolutionary. It's making healthcare more accessible for everyone."</p>
-                        <p><strong>- Local Resident</strong></p>
-                    </div>
+
+        <!-- Subscription -->
+        <div class="subscription" id="subscription">
+            <div class="subs-cont">
+                <div class="fr-plan">
+                    <h3>Free plan</h3>
+                        <div class="price">$0</div>
+                        <ul>
+                            <li>Advanced portfolio</li>
+                            <li>Basic Analytics</li>
+                            <li>Limited marketplace exposure</li>
+                            <li>10% fee per transaction</li>
+                        </ul>
+                        <button class="plan-cta">Get started</button>
+                </div>
+                <div class="pro-plan">
+                    <h3>Pro plan</h3>
+                        <div class="price">$25.00</div>
+                        <ul>
+                            <li>Custom domain</li>
+                            <li>Advanced analytics and reports</li>
+                            <li>High marketplace visibility</li>
+                            <li>5% fee per transaction</li>
+                        </ul>
+                        <button class="cta-plan">Upgrade now</button>
                 </div>
             </div>
-        </section>
+        </div>
+       
+
+        <div class="contact" id="contact">
+            <div class="contact-cont">
+                <h2 style="text-align: center;">Contact Us</h2>
+                <div class="form-cont">
+                    <form action="">
+                        <div class="cont-details">
+                            <label for="name">Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="cont-details">
+                            <label for="email">Email</label>
+                            <input type="mail">
+                        </div>
+                        <div class="cont-details">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="7"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <button>Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>

@@ -1,0 +1,133 @@
+:root {
+    --primary: #0056b3;
+    --primary-dark: #004085;
+    --secondary: #28a745;
+    --text: #333;
+    --background: #fff;
+    --gray-light: #f8f9fa;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.members, .auth-forms {
+    flex: 1;
+    min-width: 300px;
+}
+.members {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.member-info h3 {
+    margin: 0;
+}
+.member-info p {
+    color: #777;
+}
+.auth-forms {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+.tab.active {
+    background-color: white;
+    border-bottom: 2px solid var(--primary);
+}
+.form {
+    display: none;
+}
+.form.active {
+    display: block;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.form-group .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #000;
+}
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+}
+.forgot-password a {
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
